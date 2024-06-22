@@ -1,0 +1,88 @@
+/* style.css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #495057;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.container-main {
+  padding: 2rem;
+  background-color: darkorange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 7px 9px 13px 0px rgba(0, 0, 0, 0.75);
+  border: 5px solid rgb(85, 61, 17);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.judul h3 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.input-nama {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input-nama label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+.input-nama input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.describe {
+  margin-bottom: 20px;
+  text-align: justify;
+  color: white;
+}
+
+.button button {
+  background: #0056b3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.button button:hover {
+  background: #003f7f;
+  transform: translateY(-3px);
+}
