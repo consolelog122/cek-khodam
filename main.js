@@ -2,6 +2,7 @@ class ErroKhodam extends Error {}
 
 // funtion execute
 function execute(data) {
+  const nama = document.getElementById("p-nama");
   const meaning = document.getElementById("p-meaning");
   const khodam = document.getElementById("p-khodam");
   const inputNama = document.getElementById("nama");
@@ -12,8 +13,11 @@ function execute(data) {
       console.log("masukan nama terlebih dahulu");
     } else {
       const randomIndex = Math.ceil(Math.random() * data.length);
+
+      nama.textContent = `Nama : ${inputNama.value}`;
       khodam.textContent = `Khodam : ${data[randomIndex].name}`;
       meaning.textContent = `Meaning : ${data[randomIndex].meaning}`;
+      inputNama.value = "";
     }
   });
 }
